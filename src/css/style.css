@@ -8,6 +8,20 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+header {
+    text-align: center;
+}
+
+h1.title, img.name{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img.name {
+    width: 55px;    
+    margin-left: 10px;
+}
+
 h2{
     cursor: pointer;
 }
@@ -17,7 +31,7 @@ h2:hover, span, table td {
 }
 
 
-img.perfil {
+img.image-profile {
     width: 250px;
     display: block;
     margin: auto;
@@ -78,29 +92,29 @@ section.otros article.section {
     width: 15%;
 }
 
-section.otros article.section ol li, section.otros article.section ul li {
+section.otros article.section ol li, section.otros article.section ul.skills li {
     font-style: italic;
     text-align: left;
 }
 
-section.otros article.section ol li:nth-child(odd), section.otros article.section ul li:nth-child(odd) {
+section.otros article.section ol li:nth-child(odd), section.otros article.section ul.skills li:nth-child(odd) {
     background-color: blueviolet;
 }
 
-#svg-linux, #linux, #svg-windows, #windows, #svg-apple, #apple, #svg-computer, #computer, #svg-chip, #chip{
+#svg-linux, #linux, #svg-windows, #windows, #svg-apple, #apple, ul.skills li #svg-computer, ul.skills li #computer, ul.skills li #svg-chip, ul.skills li #chip{
         fill: white;
         width: 10%;
         padding: 5px 10px;
         vertical-align: middle;
 }
 
-#svg-gamepad {
+ul.skills li #svg-gamepad {
     width: 13%;
     padding: 2px 7px;
     vertical-align: middle;
 }
 
-#gamepad {
+ul.skills li #gamepad {
     fill: white;
     width: 100%;
 }
